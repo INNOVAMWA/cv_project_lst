@@ -437,4 +437,132 @@ body {
         margin: auto;
     }
 
+
+    .project {
+        margin-top: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project h4 {
+        font-size: 55px;
+        font-family: var(--second-font);
+    }
+
+    .line {
+        border-bottom: 2px solid var(--grey);
+        width: 900px;
+        flex-direction: row;
+        margin: 20px 10px;
+    }
+
+    .Projets-net {
+        background-color: var(--background1-color);
+        height: 250px;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 30px;
+        width: 1200px;
+        margin: 70px -60px;
+    }
+
+
+    .project-box {
+        width: 350px;
+        height: 250px;
+        border-radius: 20px;
+        background-image: linear-gradient(to left top, #5b6050, #748550, #8dad4e, #a7d546, #c1ff35);
+        position: relative;
+        transition: 30s all ease;
+    }
+
+    .projects-img {
+        margin: 10px 10px 6px 10px;
+    }
+
+
+    .project-box::before {
+        content: "Developed to showcase my skills in web development, my portfolio website exemplifies proficiency in technologies such as ReactJS, CSS, and Figma.";
+        width: 350px;
+        height: 191px;
+        z-index: 3;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        opacity: 92%;
+        border-top-right-radius: 18.9px;
+        border-top-left-radius: 18.9px;
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        transition: 30s all ease;
+        display: none;
+    }
+
+
+    .project-box:hover::before {
+        display: block;
+        transition: all ease 10s;
+        display: flex;
+        text-align: center;
+    }
+
+    .projects-img img {
+        width: 330px;
+        height: 170px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .projects-num {
+        background-color: var(--background2-color);
+        height: 65px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+    .projects-num p {
+        font-size: 25px;
+        color: var(--white);
+    }
+
+    .projects-num span {
+        font-size: 10px;
+        color: var(--neon-green);
+    }
+
+    /* THE FOOTER STYLE OF THE CV */
+    .port-fit {
+        height: 400px;
+        background-color: var(--footer-color);
+        margin-top: 350px;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .port-fit h2 {
+        font-size: 100px;
+    }
+
+    .port-fit p {
+        margin: auto;
+        width: 600px;
+        font-size: 20px;
+        color: var(--grey);
+    }
+
+
+
+    .port-fit-social {
+        margin-top: 20px;
+        font-size: 60px;
+        letter-spacing: 2px;
+    }
+
 }
