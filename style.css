@@ -58,9 +58,61 @@ body {
     background: var(--background1-color);
 }
 
+/* SLIDING STYLE DESIGN */
+.scroll {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    flex-direction: column;
+    position: absolute;
+    font-size: 200px;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+    line-height: 1.473em;
+    width: max-content;
+    text-align: center;
+}
+
+.left-to-right {
+    animation: left-to-right 2s infinite linear;
+    position: relative;
+    z-index: -2;
+    gap: 35px;
+    opacity: 15%;
+}
+
+@keyframes left-to-right {
+    from {
+        transform: translateX(-10%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+.right-to-left {
+    animation: right-to-left 2s infinite linear;
+    position: relative;
+    z-index: 2;
+    gap: 35px;
+    opacity: 15%;
+}
+
+@keyframes right-to-left {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-10%);
+    }
+}
+
 .profile-box {
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
     padding: 50px 20%;
 }
 
@@ -109,56 +161,6 @@ body {
 .profile-text p {
     text-transform: capitalize;
     font-size: 1em;
-}
-
-/* SLIDING STYLE DESIGN */
-.scroll {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    flex-direction: column;
-    position: absolute;
-    font-size: 200px;
-    margin-top: 0.5em;
-    text-transform: uppercase;
-    line-height: 1.473em;
-    width: max-content;
-}
-
-.left-to-right {
-    animation: left-to-right 2s infinite linear;
-    position: relative;
-    z-index: -2;
-    gap: 35px;
-    opacity: 15%;
-}
-
-@keyframes left-to-right {
-    from {
-        transform: translateX(-10%);
-    }
-
-    to {
-        transform: translateX(0%);
-    }
-}
-
-
-.right-to-left {
-    animation: right-to-left 2s infinite linear;
-    position: relative;
-    z-index: 2;
-    gap: 35px;
-    opacity: 15%;
-}
-
-@keyframes right-to-left {
-    from {
-        transform: translateX(0%);
-    }
-
-    to {
-        transform: translateX(-10%);
-    }
 }
 
 /* ABOUT BOX */
